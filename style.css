@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+header {
+     background: #388e3c;
+      color: white; 
+      padding: 1.2rem 0;
+       text-align: center;
+    }
+.container { max-width: 900px;
+     margin: 1.5rem auto;
+     background: #fff;
+     border-radius: 8px;
+     box-shadow: 0 2px 9px #e0e0e0; 
+     padding: 1.5rem; 
+    }
+.subtitle { color: #2e7d32; 
+    font-weight: 500;
+     margin-bottom: 8px;
+    }
+ section {
+     margin-bottom: 2rem;
+     }
+.item-grid {
+     display: grid; 
+    grid-template-columns:
+     repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 1rem;
+ }
+.item-card {
+     background: #fafafa; 
+    text-align: center; 
+    border-radius: 8px; 
+    padding: 1rem 0.5rem; 
+    transition: box-shadow 0.2s;
+}
+.item-card:hover { 
+    box-shadow: 0 3px 10px #d0d0d0; 
+}
+.item-img {
+     width: 52px;
+     height: 52px;
+    object-fit:contain;
+    margin-bottom: 8px; 
+}
+.buttons { 
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+.primary-btn, .secondary-btn {
+   padding: 0.8rem 1.4rem;
+   border: none;
+   border-radius: 28px; 
+   font-size: 1rem;
+    cursor: pointer;
+     font-weight: 600;
+    transition: background 0.2s;
+     }
+.primary-btn {
+     background: #388e3c;
+      color: white;
+    }
+.secondary-btn {
+     background:#388e3c; 
+     color:white;
+    }
+.btn-help {
+     font-size: 0.92rem; 
+    color: #555; 
+    text-align: center;
+     margin-top: 5px;
+    }
+.contact { background: #eef8ee;
+     border-radius: 6px;
+      padding: 1rem;
+       margin-top: 1.2rem;
+    }
+.contact-row {
+     margin: 0.6rem 0;
+    }
+.footer {
+     text-align: center
+    ; color: #888; 
+    background: #f1f1f1; 
+    font-size: 1.02rem;
+     padding: 1.1rem 0;
+      margin-top:2rem;
+    }
+@media (max-width:700px)
+{
+.container {
+     padding: 1rem;
+    }
+.item-grid { 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+ }
+  }
+@media (max-width:400px){
+     header { font-size: 1.02rem;}
+     .primary-btn, .secondary-btn {
+         padding: 0.6rem 0.6rem; 
+         font-size: 0.95rem;}
+                    }
